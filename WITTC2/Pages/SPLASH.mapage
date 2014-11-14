@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?VersionInfo exeName="LegaSuite.exe" exeVersion="7.2671.0.0" modelVersion="1.0" ?>
+<page>
+   <id>SPLASH</id>
+   <title>Empty page</title>
+   <navigationBarHidden>true</navigationBarHidden>
+   <backgroundImage/>
+   <timeout>0</timeout>
+   <controls/>
+   <handlers>
+      <event
+            desc="SPLASH_OnTimeout"
+            name="timeout">
+         <handler>
+            <action
+                  target="MAIN"
+                  type="OPEN_PAGE">
+               <transition>cube</transition>
+            </action>
+         </handler>
+      </event>
+   </handlers>
+</page>

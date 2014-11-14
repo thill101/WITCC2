@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?VersionInfo exeName="LegaSuite.exe" exeVersion="1.0.0.201411052242" modelVersion="1.0" ?>
+<page>
+   <id>DialSupport</id>
+   <title>Dial My Support</title>
+   <backbutton value="true">
+      <id>backbutton1</id>
+      <handlers>
+         <event
+               desc="backbutton1_OnBack"
+               name="tap">
+            <handler>
+               <action type="BACK"/>
+            </handler>
+         </event>
+         <event
+               desc="backbutton1_OnBack"
+               name="back">
+            <handler>
+               <action type="BACK"/>
+            </handler>
+         </event>
+      </handlers>
+   </backbutton>
+   <actionbutton value="true">
+      <id>actionbutton1</id>
+      <icon>Resources/Rocket-Bug_white_31x42.png</icon>
+      <handlers>
+         <event
+               desc="actionbutton1_OnForward"
+               name="forward">
+            <handler>
+               <action
+                     target="Drawer1"
+                     type="WIDGET_SHOW"/>
+            </handler>
+         </event>
+      </handlers>
+   </actionbutton>
+   <controls>
+      <VerticalComposite>
+         <id>VerticalComposite2</id>
+         <title/>
+         <controls>
+            <Image>
+               <id>Image1</id>
+               <source>Resources\support_icon.png</source>
+               <title/>
+               <marginCustom value="true">
+                  <marginTop>0</marginTop>
+                  <marginBottom>20</marginBottom>
+               </marginCustom>
+            </Image>
+         </controls>
+         <alignX>Center</alignX>
+      </VerticalComposite>
+      <Label>
+         <id>Label1</id>
+         <value class="rocket-title">${favoriteSupportNumber.country}</value>
+         <title/>
+         <marginCustom value="true">
+            <marginBottom>20</marginBottom>
+         </marginCustom>
+      </Label>
+      <VerticalComposite>
+         <id>VerticalComposite1</id>
+         <title/>
+         <alignX>Center</alignX>
+         <controls>
+            <Label>
+               <id>TollFree_Number_Label</id>
+               <value>Toll-free: &lt;a href=&quot;tel:${favoriteSupportNumber.tollFreeNumber}&quot;&gt;${favoriteSupportNumber.tollFreeNumber}&lt;/a&gt;
+                  <a href="tel:${favoriteSupportNumber.number}">${favoriteSupportNumber.number}</a>
+               </value>
+               <title/>
+            </Label>
+            <Label>
+               <id>Local_Number_Label</id>
+               <value>Local: &lt;a href=&quot;tel:${favoriteSupportNumber.localNumber}&quot;&gt;${favoriteSupportNumber.localNumber}&lt;/a&gt;</value>
+               <title/>
+               <marginCustom value="true">
+                  <marginTop>10</marginTop>
+               </marginCustom>
+            </Label>
+         </controls>
+      </VerticalComposite>
+      <Drawer>
+         <id>Drawer1</id>
+         <title/>
+         <size>60</size>
+         <controls>
+            <Button>
+               <id>Button2</id>
+               <title/>
+               <handlers>
+                  <event
+                        desc="Button1_OnTap"
+                        name="tap">
+                     <handler>
+                        <action
+                              target="MAIN"
+                              type="OPEN_PAGE">
+                           <transition>cube</transition>
+                        </action>
+                     </handler>
+                  </event>
+               </handlers>
+               <icon>Resources/Drawer/drawer_home.png</icon>
+               <label class="rocket-drawer-icon-text">Home</label>
+            </Button>
+            <Button>
+               <id>Button3</id>
+               <title/>
+               <icon>Resources/Drawer/drawer_about_v2.png</icon>
+               <handlers>
+                  <event
+                        desc="Button7_OnTap"
+                        name="tap">
+                     <handler>
+                        <action
+                              target="ROCKET"
+                              type="OPEN_PAGE">
+                           <transition>slide</transition>
+                        </action>
+                     </handler>
+                  </event>
+               </handlers>
+               <label class="rocket-drawer-icon-text">Rocket</label>
+            </Button>
+            <Button>
+               <id>Button4</id>
+               <title/>
+               <icon>Resources/Drawer/drawer_news.png</icon>
+               <handlers>
+                  <event
+                        desc="Button8_OnTap"
+                        name="tap">
+                     <handler>
+                        <action
+                              target="NEWS"
+                              type="OPEN_PAGE">
+                           <transition>slide</transition>
+                        </action>
+                     </handler>
+                  </event>
+               </handlers>
+               <label class="rocket-drawer-icon-text">News</label>
+            </Button>
+            <Button>
+               <id>Button5</id>
+               <title/>
+               <icon>Resources/Drawer/drawer_solutions.png</icon>
+               <handlers>
+                  <event
+                        desc="Button9_OnTap"
+                        name="tap">
+                     <handler>
+                        <action
+                              target="SOLUTIONS"
+                              type="OPEN_PAGE">
+                           <transition>slide</transition>
+                        </action>
+                     </handler>
+                  </event>
+               </handlers>
+               <label class="rocket-drawer-icon-text">Solutions</label>
+            </Button>
+            <Button>
+               <id>Button6</id>
+               <title/>
+               <icon>Resources/Drawer/drawer_support.png</icon>
+               <handlers>
+                  <event
+                        desc="Button10_OnTap"
+                        name="tap">
+                     <handler>
+                        <action
+                              target="SUPPORT"
+                              type="OPEN_PAGE">
+                           <transition>slide</transition>
+                        </action>
+                     </handler>
+                  </event>
+               </handlers>
+               <label class="rocket-drawer-icon-text">Support</label>
+            </Button>
+            <Button>
+               <id>Button7</id>
+               <title/>
+               <icon>Resources/Drawer/drawer_offices.png</icon>
+               <handlers>
+                  <event
+                        desc="Button11_OnTap"
+                        name="tap">
+                     <handler>
+                        <action
+                              target="LOCATIONS"
+                              type="OPEN_PAGE">
+                           <transition>slide</transition>
+                        </action>
+                     </handler>
+                  </event>
+               </handlers>
+               <label class="rocket-drawer-icon-text">Offices</label>
+            </Button>
+            <Button>
+               <id>Button8</id>
+               <title/>
+               <icon>Resources/Drawer/drawer_settings.png</icon>
+               <handlers>
+                  <event
+                        desc="Button12_OnTap"
+                        name="tap">
+                     <handler>
+                        <action
+                              target="SETTINGS"
+                              type="OPEN_PAGE">
+                           <transition>slide</transition>
+                        </action>
+                     </handler>
+                  </event>
+               </handlers>
+               <label class="rocket-drawer-icon-text">Settings</label>
+            </Button>
+         </controls>
+         <orientation>Right</orientation>
+      </Drawer>
+   </controls>
+   <handlers>
+      <event
+            desc="DialSupport_OnLoad"
+            name="load">
+         <handler>
+            <condition type="and">
+               <rule operation="eq">
+                  <operand>&quot;${favoriteSupportNumber}&quot;</operand>
+                  <operand>null</operand>
+               </rule>
+            </condition>
+            <action
+                  target="Scripts/enableGeolocation.js"
+                  type="CUSTOM_SCRIPT"/>
+            <action
+                  target="Scripts/findSupport.js"
+                  type="CUSTOM_SCRIPT"/>
+         </handler>
+         <handler>
+            <condition type="and">
+               <rule operation="eq">
+                  <operand>&quot;${favoriteSupportNumber.localNumber}&quot;</operand>
+                  <operand>&quot;&quot;</operand>
+               </rule>
+            </condition>
+            <action
+                  target="Local_Number_Label"
+                  type="WIDGET_HIDE"/>
+         </handler>
+      </event>
+   </handlers>
+</page>

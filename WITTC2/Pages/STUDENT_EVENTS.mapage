@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?VersionInfo exeName="LegaSuite.exe" exeVersion="1.0.0.201411061301" modelVersion="1.0" ?>
+<page>
+   <id>STUDENT_EVENTS</id>
+   <title>Student Events</title>
+   <backbutton value="true">
+      <id>backbutton1</id>
+      <id>backbutton1</id>
+      <label/>
+      <handlers>
+         <event
+               desc="backbutton1_OnBack"
+               name="tap">
+            <handler>
+               <action type="BACK"/>
+            </handler>
+         </event>
+         <event
+               desc="backbutton1_OnBack"
+               name="back">
+            <handler>
+               <action type="BACK"/>
+            </handler>
+         </event>
+      </handlers>
+   </backbutton>
+   <actionbutton value="true">
+      <id>actionbutton1</id>
+      <icon>Resources/Rocket-Bug_white_31x42.png</icon>
+      <handlers>
+         <event
+               desc="actionbutton1_OnForward"
+               name="forward">
+            <handler>
+               <action
+                     target="Drawer1"
+                     type="WIDGET_SHOW"/>
+            </handler>
+         </event>
+      </handlers>
+   </actionbutton>
+   <controls>
+      <Carousel>
+         <id>Carousel1</id>
+         <title/>
+         <controls>
+            <VerticalComposite>
+               <id>Page1</id>
+               <expandFrom>${ArrayOfNews}</expandFrom>
+               <title/>
+               <controls>
+                  <VerticalComposite>
+                     <id>VerticalComposite1</id>
+                     <title/>
+                     <alignX>Center</alignX>
+                     <controls>
+                        <Label>
+                           <id>Solution_Title_Label1</id>
+                           <title/>
+                           <wrap>true</wrap>
+                           <value class="rocket-title">${.Title}</value>
+                           <marginCustom value="true">
+                              <marginBottom>8</marginBottom>
+                           </marginCustom>
+                        </Label>
+                        <Label>
+                           <id>News_Body_Label1</id>
+                           <title/>
+                           <wrap>true</wrap>
+                           <value class="rocket-subtitle">${.Date}</value>
+                           <marginDefault>0</marginDefault>
+                           <marginCustom value="true">
+                              <marginLeft>0</marginLeft>
+                              <marginRight>0</marginRight>
+                              <marginBottom>0</marginBottom>
+                              <marginTop>12</marginTop>
+                           </marginCustom>
+                        </Label>
+                     </controls>
+                  </VerticalComposite>
+                  <Label>
+                     <id>News_Date_Label1</id>
+                     <title/>
+                     <wrap>true</wrap>
+                     <value class="rocket-body">${.Body}</value>
+                     <marginCustom value="true">
+                        <marginLeft>5</marginLeft>
+                        <marginRight>5</marginRight>
+                        <marginTop>12</marginTop>
+                        <marginBottom>10</marginBottom>
+                     </marginCustom>
+                  </Label>
+                  <Button>
+                     <id>News_btn</id>
+                     <title/>
+                     <label>Read more...</label>
+                     <handlers>
+                        <event
+                              desc="Leadership_btn_OnTap"
+                              name="tap">
+                           <handler>
+                              <action type="OPEN_URL">
+                                 <url>${.Link}</url>
+                              </action>
+                           </handler>
+                        </event>
+                     </handlers>
+                  </Button>
+               </controls>
+               <paddingCustom value="true">
+                  <paddingLeft>5</paddingLeft>
+                  <paddingRight>5</paddingRight>
+               </paddingCustom>
+            </VerticalComposite>
+         </controls>
+         <marginCustom value="true">
+            <marginTop>8</marginTop>
+         </marginCustom>
+      </Carousel>
+      <Drawer>
+         <id>Drawer1</id>
+         <title/>
+         <size>60</size>
+         <controls>
+            <Button>
+               <id>Button2</id>
+               <title/>
+               <handlers>
+                  <event
+                        desc="Button1_OnTap"
+                        name="tap">
+                     <handler>
+                        <action
+                              target="MAIN"
+                              type="OPEN_PAGE">
+                           <transition>cube</transition>
+                        </action>
+                     </handler>
+                  </event>
+               </handlers>
+               <icon>Resources/Drawer/drawer_home.png</icon>
+               <label class="rocket-drawer-icon-text">Home</label>
+            </Button>
+            <Button>
+               <id>Button3</id>
+               <title/>
+               <icon>Resources/Drawer/drawer_about_v2.png</icon>
+               <handlers>
+                  <event
+                        desc="Button7_OnTap"
+                        name="tap">
+                     <handler>
+                        <action
+                              target="ROCKET"
+                              type="OPEN_PAGE">
+                           <transition>slide</transition>
+                        </action>
+                     </handler>
+                  </event>
+               </handlers>
+               <label class="rocket-drawer-icon-text">Rocket</label>
+            </Button>
+            <Button>
+               <id>Button4</id>
+               <title/>
+               <icon>Resources/Drawer/drawer_news.png</icon>
+               <handlers>
+                  <event
+                        desc="Button8_OnTap"
+                        name="tap">
+                     <handler>
+                        <action
+                              target="NEWS"
+                              type="OPEN_PAGE">
+                           <transition>slide</transition>
+                        </action>
+                     </handler>
+                  </event>
+               </handlers>
+               <label class="rocket-drawer-icon-text">News</label>
+            </Button>
+            <Button>
+               <id>Button5</id>
+               <title/>
+               <icon>Resources/Drawer/drawer_solutions.png</icon>
+               <handlers>
+                  <event
+                        desc="Button9_OnTap"
+                        name="tap">
+                     <handler>
+                        <action
+                              target="SOLUTIONS"
+                              type="OPEN_PAGE">
+                           <transition>slide</transition>
+                        </action>
+                     </handler>
+                  </event>
+               </handlers>
+               <label class="rocket-drawer-icon-text">Solutions</label>
+            </Button>
+            <Button>
+               <id>Button6</id>
+               <title/>
+               <icon>Resources/Drawer/drawer_support.png</icon>
+               <handlers>
+                  <event
+                        desc="Button10_OnTap"
+                        name="tap">
+                     <handler>
+                        <action
+                              target="SUPPORT"
+                              type="OPEN_PAGE">
+                           <transition>slide</transition>
+                        </action>
+                     </handler>
+                  </event>
+               </handlers>
+               <label class="rocket-drawer-icon-text">Support</label>
+            </Button>
+            <Button>
+               <id>Button7</id>
+               <title/>
+               <icon>Resources/Drawer/drawer_offices.png</icon>
+               <handlers>
+                  <event
+                        desc="Button11_OnTap"
+                        name="tap">
+                     <handler>
+                        <action
+                              target="LOCATIONS"
+                              type="OPEN_PAGE">
+                           <transition>slide</transition>
+                        </action>
+                     </handler>
+                  </event>
+               </handlers>
+               <label class="rocket-drawer-icon-text">Offices</label>
+            </Button>
+            <Button>
+               <id>Button8</id>
+               <title/>
+               <icon>Resources/Drawer/drawer_settings.png</icon>
+               <handlers>
+                  <event
+                        desc="Button12_OnTap"
+                        name="tap">
+                     <handler>
+                        <action
+                              target="SETTINGS"
+                              type="OPEN_PAGE">
+                           <transition>slide</transition>
+                        </action>
+                     </handler>
+                  </event>
+               </handlers>
+               <label class="rocket-drawer-icon-text">Settings</label>
+            </Button>
+         </controls>
+         <orientation>Right</orientation>
+         <touchOffset>0</touchOffset>
+      </Drawer>
+   </controls>
+</page>

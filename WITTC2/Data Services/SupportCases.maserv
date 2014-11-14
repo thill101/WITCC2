@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?VersionInfo exeName="LegaSuite.exe" exeVersion="1.0.0.qualifier" modelVersion="1.0" ?>
+<service>
+   <uri>http://demoportal.rocketsoftware.com:8181/apa-webcontent-war-1.3/proxy/rocketrack/rest/api/latest/search</uri>
+   <query>jql=reporter%3D${Username}+order+by+created+desc&amp;maxResults=10&amp;startAt=${supportCasesStart}</query>
+   <method>GET</method>
+   <timeout>5000</timeout>
+   <username>${Username}</username>
+   <password>${Password}</password>
+   <request>
+      <type>
+         <structure/>
+      </type>
+   </request>
+   <response>
+      <type>
+         <structure>
+            <member name="expand"/>
+            <member name="issues">
+               <type>
+                  <array>
+                     <type>
+                        <structure>
+                           <member name="expand"/>
+                           <member name="fields">
+                              <type>
+                                 <structure>
+                                    <member name="aggregateprogress">
+                                       <type>
+                                          <structure>
+                                             <member name="progress"/>
+                                             <member name="total"/>
+                                          </structure>
+                                       </type>
+                                    </member>
+                                    <member name="aggregatetimeestimate"/>
+                                    <member name="aggregatetimeoriginalestimate"/>
+                                    <member name="aggregatetimespent"/>
+                                    <member name="assignee">
+                                       <type>
+                                          <structure>
+                                             <member name="active"/>
+                                             <member name="avatarUrls">
+                                                <type>
+                                                   <structure>
+                                                      <member name="_16x16"/>
+                                                      <member name="_24x24"/>
+                                                      <member name="_32x32"/>
+                                                      <member name="_48x48"/>
+                                                   </structure>
+                                                </type>
+                                             </member>
+                                             <member name="displayName"/>
+                                             <member name="emailAddress"/>
+                                             <member name="name"/>
+                                             <member name="self"/>
+                                          </structure>
+                                       </type>
+                                    </member>
+                                    <member name="components">
+                                       <type>
+                                          <array/>
+                                       </type>
+                                    </member>
+                                    <member name="created"/>
+                                    <member name="customfield_10060">
+                                       <type>
+                                          <structure>
+                                             <member name="id"/>
+                                             <member name="self"/>
+                                             <member name="value"/>
+                                          </structure>
+                                       </type>
+                                    </member>
+                                    <member name="customfield_10690"/>
+                                    <member name="customfield_10700"/>
+                                    <member name="customfield_10770"/>
+                                    <member name="customfield_10771"/>
+                                    <member name="customfield_10781"/>
+                                    <member name="customfield_10782"/>
+                                    <member name="customfield_10820">
+                                       <type>
+                                          <array>
+                                             <type>
+                                                <structure>
+                                                   <member name="active"/>
+                                                   <member name="avatarUrls">
+                                                      <type>
+                                                         <structure>
+                                                            <member name="_16x16"/>
+                                                            <member name="_24x24"/>
+                                                            <member name="_32x32"/>
+                                                            <member name="_48x48"/>
+                                                         </structure>
+                                                      </type>
+                                                   </member>
+                                                   <member name="displayName"/>
+                                                   <member name="emailAddress"/>
+                                                   <member name="name"/>
+                                                   <member name="self"/>
+                                                </structure>
+                                             </type>
+                                          </array>
+                                       </type>
+                                    </member>
+                                    <member name="customfield_10840"/>
+                                    <member name="customfield_11070">
+                                       <type>
+                                          <array/>
+                                       </type>
+                                    </member>
+                                    <member name="customfield_11090"/>
+                                    <member name="customfield_11191"/>
+                                    <member name="customfield_11280"/>
+                                    <member name="customfield_11281"/>
+                                    <member name="customfield_11285"/>
+                                    <member name="customfield_11300"/>
+                                    <member name="customfield_11310">
+                                       <type>
+                                          <structure>
+                                             <member name="id"/>
+                                             <member name="self"/>
+                                             <member name="value"/>
+                                          </structure>
+                                       </type>
+                                    </member>
+                                    <member name="customfield_11350"/>
+                                    <member name="customfield_11372"/>
+                                    <member name="customfield_11431"/>
+                                    <member name="customfield_11432"/>
+                                    <member name="customfield_11433"/>
+                                    <member name="customfield_11434"/>
+                                    <member name="customfield_11435"/>
+                                    <member name="customfield_11436">
+                                       <type>
+                                          <structure>
+                                             <member name="id"/>
+                                             <member name="self"/>
+                                             <member name="value"/>
+                                          </structure>
+                                       </type>
+                                    </member>
+                                    <member name="customfield_11437">
+                                       <type>
+                                          <structure>
+                                             <member name="id"/>
+                                             <member name="self"/>
+                                             <member name="value"/>
+                                          </structure>
+                                       </type>
+                                    </member>
+                                    <member name="customfield_11438"/>
+                                    <member name="customfield_11439"/>
+                                    <member name="customfield_11440"/>
+                                    <member name="customfield_11441"/>
+                                    <member name="customfield_11442"/>
+                                    <member name="customfield_11443"/>
+                                    <member name="customfield_11444"/>
+                                    <member name="customfield_11447"/>
+                                    <member name="customfield_11450"/>
+                                    <member name="customfield_11451"/>
+                                    <member name="customfield_11452"/>
+                                    <member name="customfield_11454"/>
+                                    <member name="customfield_11455"/>
+                                    <member name="customfield_11459"/>
+                                    <member name="customfield_11460">
+                                       <type>
+                                          <structure>
+                                             <member name="id"/>
+                                             <member name="self"/>
+                                             <member name="value"/>
+                                          </structure>
+                                       </type>
+                                    </member>
+                                    <member name="customfield_11461"/>
+                                    <member name="customfield_11463"/>
+                                    <member name="customfield_11464"/>
+                                    <member name="customfield_11470"/>
+                                    <member name="customfield_11474"/>
+                                    <member name="customfield_11476"/>
+                                    <member name="customfield_11478"/>
+                                    <member name="customfield_11480"/>
+                                    <member name="customfield_11530"/>
+                                    <member name="customfield_11531"/>
+                                    <member name="customfield_12030"/>
+                                    <member name="customfield_12031"/>
+                                    <member name="customfield_12930"/>
+                                    <member name="customfield_14231"/>
+                                    <member name="customfield_14232"/>
+                                    <member name="customfield_14630"/>
+                                    <member name="customfield_14631"/>
+                                    <member name="description"/>
+                                    <member name="duedate"/>
+                                    <member name="environment"/>
+                                    <member name="fixVersions">
+                                       <type>
+                                          <array/>
+                                       </type>
+                                    </member>
+                                    <member name="issuelinks">
+                                       <type>
+                                          <array>
+                                             <type>
+                                                <structure>
+                                                   <member name="id"/>
+                                                   <member name="inwardIssue">
+                                                      <type>
+                                                         <structure>
+                                                            <member name="fields">
+                                                               <type>
+                                                                  <structure>
+                                                                     <member name="issuetype">
+                                                                        <type>
+                                                                           <structure>
+                                                                              <member name="description"/>
+                                                                              <member name="iconUrl"/>
+                                                                              <member name="id"/>
+                                                                              <member name="name"/>
+                                                                              <member name="self"/>
+                                                                              <member name="subtask"/>
+                                                                           </structure>
+                                                                        </type>
+                                                                     </member>
+                                                                     <member name="priority">
+                                                                        <type>
+                                                                           <structure>
+                                                                              <member name="iconUrl"/>
+                                                                              <member name="id"/>
+                                                                              <member name="name"/>
+                                                                              <member name="self"/>
+                                                                           </structure>
+                                                                        </type>
+                                                                     </member>
+                                                                     <member name="status">
+                                                                        <type>
+                                                                           <structure>
+                                                                              <member name="description"/>
+                                                                              <member name="iconUrl"/>
+                                                                              <member name="id"/>
+                                                                              <member name="name"/>
+                                                                              <member name="self"/>
+                                                                           </structure>
+                                                                        </type>
+                                                                     </member>
+                                                                     <member name="summary"/>
+                                                                  </structure>
+                                                               </type>
+                                                            </member>
+                                                            <member name="id"/>
+                                                            <member name="key"/>
+                                                            <member name="self"/>
+                                                         </structure>
+                                                      </type>
+                                                   </member>
+                                                   <member name="self"/>
+                                                   <member name="type">
+                                                      <type>
+                                                         <structure>
+                                                            <member name="id"/>
+                                                            <member name="inward"/>
+                                                            <member name="name"/>
+                                                            <member name="outward"/>
+                                                            <member name="self"/>
+                                                         </structure>
+                                                      </type>
+                                                   </member>
+                                                </structure>
+                                             </type>
+                                          </array>
+                                       </type>
+                                    </member>
+                                    <member name="issuetype">
+                                       <type>
+                                          <structure>
+                                             <member name="description"/>
+                                             <member name="iconUrl"/>
+                                             <member name="id"/>
+                                             <member name="name"/>
+                                             <member name="self"/>
+                                             <member name="subtask"/>
+                                          </structure>
+                                       </type>
+                                    </member>
+                                    <member name="labels">
+                                       <type>
+                                          <array/>
+                                       </type>
+                                    </member>
+                                    <member name="lastViewed"/>
+                                    <member name="priority">
+                                       <type>
+                                          <structure>
+                                             <member name="iconUrl"/>
+                                             <member name="id"/>
+                                             <member name="name"/>
+                                             <member name="self"/>
+                                          </structure>
+                                       </type>
+                                    </member>
+                                    <member name="progress">
+                                       <type>
+                                          <structure>
+                                             <member name="progress"/>
+                                             <member name="total"/>
+                                          </structure>
+                                       </type>
+                                    </member>
+                                    <member name="project">
+                                       <type>
+                                          <structure>
+                                             <member name="avatarUrls">
+                                                <type>
+                                                   <structure>
+                                                      <member name="_16x16"/>
+                                                      <member name="_24x24"/>
+                                                      <member name="_32x32"/>
+                                                      <member name="_48x48"/>
+                                                   </structure>
+                                                </type>
+                                             </member>
+                                             <member name="id"/>
+                                             <member name="key"/>
+                                             <member name="name"/>
+                                             <member name="self"/>
+                                          </structure>
+                                       </type>
+                                    </member>
+                                    <member name="reporter">
+                                       <type>
+                                          <structure>
+                                             <member name="active"/>
+                                             <member name="avatarUrls">
+                                                <type>
+                                                   <structure>
+                                                      <member name="_16x16"/>
+                                                      <member name="_24x24"/>
+                                                      <member name="_32x32"/>
+                                                      <member name="_48x48"/>
+                                                   </structure>
+                                                </type>
+                                             </member>
+                                             <member name="displayName"/>
+                                             <member name="emailAddress"/>
+                                             <member name="name"/>
+                                             <member name="self"/>
+                                          </structure>
+                                       </type>
+                                    </member>
+                                    <member name="resolution">
+                                       <type>
+                                          <structure>
+                                             <member name="description"/>
+                                             <member name="id"/>
+                                             <member name="name"/>
+                                             <member name="self"/>
+                                          </structure>
+                                       </type>
+                                    </member>
+                                    <member name="resolutiondate"/>
+                                    <member name="status">
+                                       <type>
+                                          <structure>
+                                             <member name="description"/>
+                                             <member name="iconUrl"/>
+                                             <member name="id"/>
+                                             <member name="name"/>
+                                             <member name="self"/>
+                                          </structure>
+                                       </type>
+                                    </member>
+                                    <member name="subtasks">
+                                       <type>
+                                          <array/>
+                                       </type>
+                                    </member>
+                                    <member name="summary"/>
+                                    <member name="timeestimate"/>
+                                    <member name="timeoriginalestimate"/>
+                                    <member name="timespent"/>
+                                    <member name="updated"/>
+                                    <member name="versions">
+                                       <type>
+                                          <array/>
+                                       </type>
+                                    </member>
+                                    <member name="votes">
+                                       <type>
+                                          <structure>
+                                             <member name="hasVoted"/>
+                                             <member name="self"/>
+                                             <member name="votes"/>
+                                          </structure>
+                                       </type>
+                                    </member>
+                                    <member name="watches">
+                                       <type>
+                                          <structure>
+                                             <member name="isWatching"/>
+                                             <member name="self"/>
+                                             <member name="watchCount"/>
+                                          </structure>
+                                       </type>
+                                    </member>
+                                    <member name="workratio"/>
+                                 </structure>
+                              </type>
+                           </member>
+                           <member name="id"/>
+                           <member name="key"/>
+                           <member name="self"/>
+                        </structure>
+                     </type>
+                  </array>
+               </type>
+            </member>
+            <member name="maxResults"/>
+            <member name="startAt"/>
+            <member name="total"/>
+         </structure>
+      </type>
+   </response>
+</service>

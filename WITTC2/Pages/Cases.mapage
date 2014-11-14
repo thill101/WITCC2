@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?VersionInfo exeName="LegaSuite.exe" exeVersion="1.0.0.201411052242" modelVersion="1.0" ?>
+<page>
+   <id>Cases</id>
+   <title>Support Cases</title>
+   <backbutton value="true">
+      <id>backbutton1</id>
+      <handlers>
+         <event
+               desc="backbutton1_OnBack"
+               name="tap">
+            <handler>
+               <action type="BACK"/>
+            </handler>
+         </event>
+         <event
+               desc="backbutton1_OnBack"
+               name="back">
+            <handler>
+               <action type="BACK"/>
+            </handler>
+         </event>
+      </handlers>
+   </backbutton>
+   <actionbutton value="true">
+      <id>actionbutton1</id>
+      <icon>Resources/Rocket-Bug_white_31x42.png</icon>
+      <handlers>
+         <event
+               desc="actionbutton1_OnForward"
+               name="forward">
+            <handler>
+               <action
+                     target="Drawer1"
+                     type="WIDGET_SHOW"/>
+            </handler>
+         </event>
+      </handlers>
+   </actionbutton>
+   <controls>
+      <HorizontalComposite>
+         <id>HorizontalComposite1</id>
+         <controls>
+            <Button>
+               <id>PreviousButton</id>
+               <label>Previous</label>
+               <handlers>
+                  <event
+                        desc="PreviousButton_OnTap"
+                        name="tap">
+                     <handler>
+                        <action
+                              target="Scripts/getPreviousSupportCases.js"
+                              type="CUSTOM_SCRIPT"/>
+                        <action
+                              target="SupportCases"
+                              type="SERVICE_CALL"/>
+                        <action
+                              target="Scripts/enableSupportCasesButtons.js"
+                              type="CUSTOM_SCRIPT"/>
+                     </handler>
+                  </event>
+               </handlers>
+               <flex>1</flex>
+               <marginDefault>4</marginDefault>
+               <title/>
+            </Button>
+            <Button>
+               <id>NextButton</id>
+               <label>Next</label>
+               <handlers>
+                  <event
+                        desc="Button2_OnTap"
+                        name="tap">
+                     <handler>
+                        <action
+                              target="Scripts/getNextSupportCases.js"
+                              type="CUSTOM_SCRIPT"/>
+                        <action
+                              target="SupportCases"
+                              type="SERVICE_CALL"/>
+                        <action
+                              target="Scripts/enableSupportCasesButtons.js"
+                              type="CUSTOM_SCRIPT"/>
+                     </handler>
+                  </event>
+               </handlers>
+               <flex>1</flex>
+               <marginDefault>4</marginDefault>
+               <title/>
+            </Button>
+         </controls>
+         <title/>
+      </HorizontalComposite>
+      <List>
+         <id>List1</id>
+         <title/>
+         <listItems>
+            <listItem>
+               <title>${SupportCases.response.issues.key}</title>
+               <subtitle>${SupportCases.response.issues.fields.summary}</subtitle>
+               <icon>${SupportCases.response.issues.fields.issuetype.iconUrl}</icon>
+            </listItem>
+         </listItems>
+         <handlers>
+            <event
+                  desc="List1_OnItemSelected"
+                  name="itemSelected">
+               <handler>
+                  <action
+                        target="SelectedCase"
+                        type="SET_VARIABLE_VALUE"
+                        target-type="Structure">
+                     <actionValue>
+                        <mapping field="description">${SupportCases.response.issues[${List1.selectedIndex}].fields.description}</mapping>
+                        <mapping field="key">${SupportCases.response.issues[${List1.selectedIndex}].key}</mapping>
+                        <mapping field="statusName">${SupportCases.response.issues[${List1.selectedIndex}].fields.status.name}</mapping>
+                        <mapping field="statusIconUrl">${SupportCases.response.issues[${List1.selectedIndex}].fields.status.iconUrl}</mapping>
+                        <mapping field="summary">${SupportCases.response.issues[${List1.selectedIndex}].fields.summary}</mapping>
+                        <mapping field="typeName">${SupportCases.response.issues[${List1.selectedIndex}].fields.issuetype.name}</mapping>
+                        <mapping field="typeIconUrl">${SupportCases.response.issues[${List1.selectedIndex}].fields.issuetype.iconUrl}</mapping>
+                        <mapping field="priorityName">${SupportCases.response.issues[${List1.selectedIndex}].fields.priority.name}</mapping>
+                        <mapping field="priorityIconUrl">${SupportCases.response.issues[${List1.selectedIndex}].fields.priority.iconUrl}</mapping>
+                        <mapping field="url">http://rocketrack.com/browse/${SupportCases.response.issues[${List1.selectedIndex}].key}</mapping>
+                     </actionValue>
+                  </action>
+                  <action
+                        target="Case"
+                        type="OPEN_PAGE"/>
+               </handler>
+            </event>
+         </handlers>
+      </List>
+      <Drawer>
+         <id>Drawer1</id>
+         <title/>
+         <size>60</size>
+         <controls>
+            <Button>
+               <id>Button2</id>
+               <title/>
+               <handlers>
+                  <event
+                        desc="Button1_OnTap"
+                        name="tap">
+                     <handler>
+                        <action
+                              target="MAIN"
+                              type="OPEN_PAGE">
+                           <transition>cube</transition>
+                        </action>
+                     </handler>
+                  </event>
+               </handlers>
+               <icon>Resources/Drawer/drawer_home.png</icon>
+               <label class="rocket-drawer-icon-text">Home</label>
+            </Button>
+            <Button>
+               <id>Button3</id>
+               <title/>
+               <icon>Resources/Drawer/drawer_about_v2.png</icon>
+               <handlers>
+                  <event
+                        desc="Button7_OnTap"
+                        name="tap">
+                     <handler>
+                        <action
+                              target="ROCKET"
+                              type="OPEN_PAGE">
+                           <transition>slide</transition>
+                        </action>
+                     </handler>
+                  </event>
+               </handlers>
+               <label class="rocket-drawer-icon-text">Rocket</label>
+            </Button>
+            <Button>
+               <id>Button4</id>
+               <title/>
+               <icon>Resources/Drawer/drawer_news.png</icon>
+               <handlers>
+                  <event
+                        desc="Button8_OnTap"
+                        name="tap">
+                     <handler>
+                        <action
+                              target="NEWS"
+                              type="OPEN_PAGE">
+                           <transition>slide</transition>
+                        </action>
+                     </handler>
+                  </event>
+               </handlers>
+               <label class="rocket-drawer-icon-text">News</label>
+            </Button>
+            <Button>
+               <id>Button5</id>
+               <title/>
+               <icon>Resources/Drawer/drawer_solutions.png</icon>
+               <handlers>
+                  <event
+                        desc="Button9_OnTap"
+                        name="tap">
+                     <handler>
+                        <action
+                              target="SOLUTIONS"
+                              type="OPEN_PAGE">
+                           <transition>slide</transition>
+                        </action>
+                     </handler>
+                  </event>
+               </handlers>
+               <label class="rocket-drawer-icon-text">Solutions</label>
+            </Button>
+            <Button>
+               <id>Button6</id>
+               <title/>
+               <icon>Resources/Drawer/drawer_support.png</icon>
+               <handlers>
+                  <event
+                        desc="Button10_OnTap"
+                        name="tap">
+                     <handler>
+                        <action
+                              target="SUPPORT"
+                              type="OPEN_PAGE">
+                           <transition>slide</transition>
+                        </action>
+                     </handler>
+                  </event>
+               </handlers>
+               <label class="rocket-drawer-icon-text">Support</label>
+            </Button>
+            <Button>
+               <id>Button7</id>
+               <title/>
+               <icon>Resources/Drawer/drawer_offices.png</icon>
+               <handlers>
+                  <event
+                        desc="Button11_OnTap"
+                        name="tap">
+                     <handler>
+                        <action
+                              target="LOCATIONS"
+                              type="OPEN_PAGE">
+                           <transition>slide</transition>
+                        </action>
+                     </handler>
+                  </event>
+               </handlers>
+               <label class="rocket-drawer-icon-text">Offices</label>
+            </Button>
+            <Button>
+               <id>Button8</id>
+               <title/>
+               <icon>Resources/Drawer/drawer_settings.png</icon>
+               <handlers>
+                  <event
+                        desc="Button12_OnTap"
+                        name="tap">
+                     <handler>
+                        <action
+                              target="SETTINGS"
+                              type="OPEN_PAGE">
+                           <transition>slide</transition>
+                        </action>
+                     </handler>
+                  </event>
+               </handlers>
+               <label class="rocket-drawer-icon-text">Settings</label>
+            </Button>
+         </controls>
+         <orientation>Right</orientation>
+      </Drawer>
+   </controls>
+   <handlers>
+      <event
+            desc="Cases_OnLoad"
+            name="load">
+         <handler>
+            <condition type="and">
+               <condition type="or">
+                  <rule operation="eq">
+                     <operand>&quot;${Username}&quot;</operand>
+                     <operand>null</operand>
+                  </rule>
+                  <rule operation="eq">
+                     <operand>&quot;${Password}&quot;</operand>
+                     <operand>null</operand>
+                  </rule>
+               </condition>
+               <condition type="and">
+                  <rule operation="eq">
+                     <operand>&quot;${UseCredentials}&quot;</operand>
+                     <operand>&quot;false&quot;</operand>
+                  </rule>
+               </condition>
+            </condition>
+            <action
+                  target="UseCredentials"
+                  type="SET_VARIABLE_VALUE">
+               <actionValue value="true"/>
+            </action>
+            <action type="BACK"/>
+         </handler>
+         <handler>
+            <condition type="and">
+               <condition type="or">
+                  <rule operation="eq">
+                     <operand>&quot;${Username}&quot;</operand>
+                     <operand>null</operand>
+                  </rule>
+                  <rule operation="eq">
+                     <operand>&quot;${Password}&quot;</operand>
+                     <operand>null</operand>
+                  </rule>
+               </condition>
+               <condition type="and">
+                  <rule operation="eq">
+                     <operand>&quot;${UseCredentials}&quot;</operand>
+                     <operand>&quot;true&quot;</operand>
+                  </rule>
+               </condition>
+            </condition>
+            <action
+                  target="SETTINGS"
+                  type="OPEN_PAGE">
+               <transition>slide</transition>
+            </action>
+         </handler>
+         <handler>
+            <condition type="and">
+               <rule operation="ne">
+                  <operand>&quot;${Username}&quot;</operand>
+                  <operand>null</operand>
+               </rule>
+               <rule operation="ne">
+                  <operand>&quot;${Password}&quot;</operand>
+                  <operand>null</operand>
+               </rule>
+            </condition>
+            <action
+                  target="Scripts/enableSupportCasesButtons.js"
+                  type="CUSTOM_SCRIPT"/>
+         </handler>
+         <handler>
+            <condition type="and">
+               <rule operation="ne">
+                  <operand>&quot;${Username}&quot;</operand>
+                  <operand>null</operand>
+               </rule>
+               <rule operation="ne">
+                  <operand>&quot;${Password}&quot;</operand>
+                  <operand>null</operand>
+               </rule>
+               <rule operation="eq">
+                  <operand>&quot;${LoadCasesFlag}&quot;</operand>
+                  <operand>&quot;False&quot;</operand>
+               </rule>
+            </condition>
+            <action
+                  target="SupportCases"
+                  type="SERVICE_CALL"/>
+            <action
+                  target="LoadCasesFlag"
+                  type="SET_VARIABLE_VALUE">
+               <actionValue value="True"/>
+            </action>
+         </handler>
+      </event>
+   </handlers>
+</page>

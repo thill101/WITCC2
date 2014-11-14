@@ -1,0 +1,935 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?VersionInfo exeName="LegaSuite.exe" exeVersion="1.0.0.201411061301" modelVersion="1.0" ?>
+<variables>
+   <variable name="ArrayOfLeaders">
+      <type>
+         <array>
+            <type>
+               <structure>
+                  <member name="Images"/>
+                  <member name="Names"/>
+                  <member name="Descriptions"/>
+                  <member name="Positions"/>
+               </structure>
+            </type>
+         </array>
+      </type>
+      <value
+            target="ArrayOfLeaders"
+            type="Array">
+         <value type="Structure">
+            <value
+                  target="Images"
+                  type="Simple">Resources/Leaders/01_AndyYouniss.png</value>
+            <value
+                  target="Descriptions"
+                  type="Simple">Andy Youniss co-founded Rocket Software in 1990 and continues to be the company&apos;s main driving force. Andy successfully established and actively manages Rocket&apos;s largest OEM partnerships and is guiding the company&apos;s growth through technology investments, acquisitions, new product lines, and strategic partnerships. Prior to founding Rocket Software, Andy was the development manager for DB View Inc., a software company specializing in DB2 database tools. Previously, he was a programmer/analyst at American Management Systems, and was also a project development consultant. Andy holds a B.S. degree in Computer Science from the Catholic University of America in Washington, DC.;</value>
+            <value
+                  target="Positions"
+                  type="Simple">President, CEO and Co-Founder</value>
+            <value
+                  target="Names"
+                  type="Simple">Andy Youniss</value>
+         </value>
+         <value type="Structure">
+            <value
+                  target="Images"
+                  type="Simple">Resources/Leaders/02_BobPotter.png</value>
+            <value
+                  target="Descriptions"
+                  type="Simple">Bob Potter joined Rocket Software in 2013 and leads Rocket&apos;s Business Information and Analytics business unit. Prior to joining Rocket, Bob ran business development for QlikTech and was also co-founder and CEO of Expressor, which was acquired by QlikTech in 2012. Previously, Bob was CEO of data warehousing software company Kalido, EVP of Business Operations of IONA Technologies, and SVP of Sales and Services at Object Design. Bob has spent 33 years in the software industry with start-ups, mid-size and large public companies and serves on the board of directors at Hamilton Thorne Biosciences and Thorne Diagnostics. He holds a BS in Business Administration from Providence College and an MBA in Marketing from the University of Rhode Island.</value>
+            <value
+                  target="Positions"
+                  type="Simple">Senior Vice President and General Manager, Business Information and Analytics Business Unit</value>
+            <value
+                  target="Names"
+                  type="Simple">Bob Potter</value>
+         </value>
+         <value type="Structure">
+            <value
+                  target="Images"
+                  type="Simple">Resources/Leaders/03_BrainStarr.png</value>
+            <value
+                  target="Descriptions"
+                  type="Simple">Brian Starr joined Rocket Software in 2011 and is the leader of Rocket&apos;s Storage, Networks, and Compliance business unit. Brian also acts as Vice President, IBM Tivoli Partnership for Rocket. Prior to joining Rocket, Brian built and managed the storage software z/OS business for IBM Tivoli, and previously managed the DB2 tools business for IBM Information Management. He has managed many aspects of the IBM storage software business in the IBM Systems and Technology Group in the past. Brian holds a B.S. degree in Computer Science from Ohio State University.</value>
+            <value
+                  target="Positions"
+                  type="Simple">Senior Vice President and General Manager, Storage, Networks, and Compliance Business Unit</value>
+            <value
+                  target="Names"
+                  type="Simple">Brian Starr</value>
+         </value>
+         <value type="Structure">
+            <value
+                  target="Images"
+                  type="Simple">Resources/Leaders/04_BryanSmith.png</value>
+            <value
+                  target="Descriptions"
+                  type="Simple">Bryan Smith joined Rocket Software in 2011 and manages all aspects of Rocket&apos;s R&amp;D organization and operations. Bryan has over 20 years of experience in software development. Prior to joining Rocket, Bryan was an IBM Distinguished Engineer in the Information Management division of the IBM Software Group, where he held various engineering, management, and customer-facing roles. He served as a division technical intellectual property lead, represented IBM on the Transaction Processing Council (TPC benchmarks), published numerous articles in information management publications, and was appointed an Association for Computing Machinery Distinguished Engineer in 2009. Bryan holds B.S. and M.S. degrees in Computer Science with a minor in Mathematics from the California State University, at Pomona and Chico.</value>
+            <value
+                  target="Positions"
+                  type="Simple">Vice President, R&amp;D and Chief Technology Officer</value>
+            <value
+                  target="Names"
+                  type="Simple">Bryan Smith</value>
+         </value>
+         <value type="Structure">
+            <value
+                  target="Images"
+                  type="Simple">Resources/Leaders/05_ClaudiaFranco.png</value>
+            <value
+                  target="Descriptions"
+                  type="Simple">Claudia Franco joined Rocket Software in 2012 and is the leader of Rocket&apos;s Database Tools business area. Claudia has over 14 years of experience in IT, including leadership roles in engineering, research, management, and business operations. Prior to joining Rocket, Claudia was a senior manager at IBM in the Information Management brand of the Software Group division. Claudia holds a B.S. degree in Mathematics from the University of California, Davis.</value>
+            <value
+                  target="Positions"
+                  type="Simple">Vice President, Database Tools Business Area</value>
+            <value
+                  target="Names"
+                  type="Simple">Claudia Franco</value>
+         </value>
+         <value type="Structure">
+            <value
+                  target="Images"
+                  type="Simple">Resources/Leaders/06_ClintClements.png</value>
+            <value
+                  target="Descriptions"
+                  type="Simple">Clint Clements joined Rocket Software in 2013 and leads Rocket&apos;s Sales Operations team. Before joining Rocket, Clint spent seven years in Worldwide Sales Operations at Aspen Technologies where he led the effort to establish new methodology for sales process, forecasting sales revenues and analytic tools. Prior to Aspen, he worked for several years in the telecom network industry including executive roles with Comverse and Telco Systems. Clint holds a B.S. in Computer Science and Business Administration from California State University.</value>
+            <value
+                  target="Positions"
+                  type="Simple">Vice President, Global Sales Operations</value>
+            <value
+                  target="Names"
+                  type="Simple">Clint Clements</value>
+         </value>
+         <value type="Structure">
+            <value
+                  target="Images"
+                  type="Simple">Resources/Leaders/07_DavidReibel.png</value>
+            <value
+                  target="Descriptions"
+                  type="Simple">David Reibel joined Rocket Software in 2013 as Vice President and General Counsel. David was previously Senior Vice President, General Counsel and Secretary at Aspect Software. He held similar positions at Way Systems, Aprisma Management Technologies, and two companies in Europe. David has international corporate and commercial transaction experience with public and private companies, as well as capital markets, M&amp;A, licensing and strategic relationships, intellectual property portfolio management, litigation, employment law and risk management experience. He serves on the boards of the Massachusetts Technology Leadership Council, North Shore Technology Council, and North Shore InnoVentures. David holds a BA from the University of Michigan and a JD from Stanford Law School.</value>
+            <value
+                  target="Positions"
+                  type="Simple">Senior Vice President and General Counsel</value>
+            <value
+                  target="Names"
+                  type="Simple">David Reibel</value>
+         </value>
+         <value type="Structure">
+            <value
+                  target="Images"
+                  type="Simple">Resources/Leaders/08_JayLeader.png</value>
+            <value
+                  target="Descriptions"
+                  type="Simple">Jay Leader joined Rocket in 2014 as Senior Vice President and Chief Information Officer. Most recently he was Vice President of IT and Chief Information Officer at Rapid7. Over his 29 year career Jay has served in a variety of IT and consulting positions including management roles in Network/Telecommunications, Business Systems, and Project Management at companies such as iRobot, Nypro Inc., Data General Corp., and Coopers &amp; Lybrand. He is the former Chairman of the Boston Society for Information Management CIO Roundtable, and was named the 2010 Massachusetts CIO of the Year by the Massachusetts Technology Leadership Council. He was also named one of Computerworld&apos;s 2011 Premier 100 Leaders in IT. Jay is a graduate of Clark University, Worcester, MA, where he earned a BA in International Relations and an MBA.</value>
+            <value
+                  target="Positions"
+                  type="Simple">Senior Vice President, Chief Information Officer</value>
+            <value
+                  target="Names"
+                  type="Simple">Jay Leader</value>
+         </value>
+         <value type="Structure">
+            <value
+                  target="Images"
+                  type="Simple">Resources/Leaders/09_JohanMagnussonGedda.png</value>
+            <value
+                  target="Descriptions"
+                  type="Simple">Johan Magnusson Gedda co-founded Rocket Software and is actively involved in the company&apos;s financial management and business strategy. In addition to his involvement with Rocket, Johan was a partner with the Vitol Group of Companies, a privately held Swiss trading partnership. Prior to Vitol, Johan held a number of management positions in the software industry, including serving as President of Roadshow International Inc., a $12 million supply chain management company. He also served in the role of division and country manager for Systems Center Inc., a $130 million provider of systems software and services. Johan holds B.S. and M.S. degrees in Engineering from the Massachusetts Institute of Technology and an M.B.A. degree from the Harvard Business School.</value>
+            <value
+                  target="Positions"
+                  type="Simple">Director, Co-Founder</value>
+            <value
+                  target="Names"
+                  type="Simple">Johan Magnusson Gedda</value>
+         </value>
+         <value type="Structure">
+            <value
+                  target="Images"
+                  type="Simple">Resources/Leaders/10_KevinThimble.png</value>
+            <value
+                  target="Descriptions"
+                  type="Simple">Kevin Thimble has over 25 years of experience in finance and accounting. Kevin joined Rocket in 2010 and has responsibilities over the world-wide accounting, revenue recognition, financial planning and analysis, treasury and order management areas. Prior to joining Rocket, Kevin served as Vice President and Corporate Controller at various public software companies including Phase Forward Incorporated, Unica Corporation and SeaChange International. Kevin holds a B.S. in Accounting and Economics from the College of the Holy Cross and is a certified public accountant.</value>
+            <value
+                  target="Positions"
+                  type="Simple">Vice President and CFO</value>
+            <value
+                  target="Names"
+                  type="Simple">Kevin Thimble</value>
+         </value>
+         <value type="Structure">
+            <value
+                  target="Images"
+                  type="Simple">Resources/Leaders/11_MarcusHatfield.png</value>
+            <value
+                  target="Descriptions"
+                  type="Simple">Marcus Hatfield joined Rocket Software in 2011 and leads Rocket&apos;s Corporate Development team. Prior to Rocket, he launched the corporate development team at Pegasystems, where he served in a leadership role for eight years. While at Pegasystems, he executed the company&apos;s largest acquisition in history and managed a successful global, cross-functional integration effort. He also served as an advisor on corporate strategy, helping to shape corporate goals and identify and launch new business initiatives. He also managed several operational teams including helping to re-engineer the company&apos;s sales strategy. Prior to Pegasystems, he served as a technology investment banker for emerging growth companies. Marcus holds a B.S. degree in Management Science from the State University of New York at Geneseo.</value>
+            <value
+                  target="Positions"
+                  type="Simple">Senior Vice President, Corporate Development</value>
+            <value
+                  target="Names"
+                  type="Simple">Marcus Hatfield</value>
+         </value>
+         <value type="Structure">
+            <value
+                  target="Images"
+                  type="Simple">Resources/Leaders/12_MaureenHuber.png</value>
+            <value
+                  target="Descriptions"
+                  type="Simple">Maureen Huber joined Rocket in 2014 and is the leader of Rocket&apos;s Trubiquity business area. Maureen served as Trubiquity&apos;s CEO prior to joining Rocket and was previously their CFO where she directed financial operations, human resources, customer support and marketing. Prior to joining Trubiquity, she was the Corporate Controller of DynTek Inc., a leading provider of professional technology services to government, education and mid-market commercial customers. Maureen holds a Bachelor of Science degree from Michigan State University and is a graduate of Michigan State University&apos;s Executive MBA Program.</value>
+            <value
+                  target="Positions"
+                  type="Simple">Vice President, Rocket Trubiquity Business Area</value>
+            <value
+                  target="Names"
+                  type="Simple">Maureen Huber</value>
+         </value>
+         <value type="Structure">
+            <value
+                  target="Images"
+                  type="Simple">Resources/Leaders/13_PGaryGregory.png</value>
+            <value
+                  target="Descriptions"
+                  type="Simple">Gary Gregory joined Rocket Software in 2012 and leads Rocket&apos;s Database Servers and Tools Business Unit. He graduated with one of the first computer science degrees awarded by the Massachusetts Institute of Technology. Gary spent 10 years as the Chief Computer Scientist at Computer Corporation of America, which developed the Model 204 database, and was later acquired by Rocket Software. He was a charter member of the ANSI X3H2 committee, which standardized database languages. In 1984 Gary joined Progress Software and two years later founded Sirius Software, where he remained as president until joining Rocket.</value>
+            <value
+                  target="Positions"
+                  type="Simple">Senior Vice President and General Manager, Database Servers and Tools Business Unit</value>
+            <value
+                  target="Names"
+                  type="Simple">P. Gary Gregory</value>
+         </value>
+         <value type="Structure">
+            <value
+                  target="Images"
+                  type="Simple">Resources/Leaders/14_RichardMorgan.png</value>
+            <value
+                  target="Descriptions"
+                  type="Simple">Dick Morgan has worked in the human resources profession for over 25 years. Early in his career he was an initial member of the HR team at Lotus Development Corporation. From 2004 until 2013 Dick worked for Dassault Systemes, a global leader in 3D design software, first as VP HR at SolidWorks and more recently VP HR for Dassault Systemes Americas Corporation. He is a graduate of the University of New Hampshire and Tufts University.</value>
+            <value
+                  target="Positions"
+                  type="Simple">Senior Vice President, Human Resources</value>
+            <value
+                  target="Names"
+                  type="Simple">Richard Morgan</value>
+         </value>
+         <value type="Structure">
+            <value
+                  target="Images"
+                  type="Simple">Resources/Leaders/15_SamElias.png</value>
+            <value
+                  target="Descriptions"
+                  type="Simple">Sam Elias joined Rocket Software in 2007 and is the leader of Rocket&apos;s Application, Development, Integration and Modernization business unit. Prior to joining Rocket, Sam spent 11 years with Seagull Software where he successfully led a global sales team as the Senior Vice President and General Manager ISV and Director of Corporate Sales in North and South America, Asia Pacific, and the Middle East. Sam started his professional career at IBM where he spent 10 successful years as a Software Engineer, Sales Engineer, Marketing Representative, and Marketing Manager specializing in software sales. Sam holds a B.A. in Mathematics from Malone College and an M.S. in Computer Science from the Rochester Institute of Technology.</value>
+            <value
+                  target="Positions"
+                  type="Simple">Senior Vice President and General Manager, Application Development, Integration, and Modernization Business Unit</value>
+            <value
+                  target="Names"
+                  type="Simple">Sam Elias</value>
+         </value>
+      </value>
+   </variable>
+   <variable name="ArrayOfNews">
+      <type>
+         <array>
+            <type>
+               <structure>
+                  <member name="Title"/>
+                  <member name="Body"/>
+                  <member name="Link"/>
+                  <member name="Date"/>
+               </structure>
+            </type>
+         </array>
+      </type>
+      <value
+            target="ArrayOfNews"
+            type="Array">
+         <value type="Structure">
+            <value
+                  target="Body"
+                  type="Simple">This technical refresh adds new features such as mobile monitoring, expanded reporting capabilities and support for IBM i 7.2. Check out what&apos;s new!</value>
+            <value
+                  target="Link"
+                  type="Simple">http://www.rocketsoftware.com/icluster-71-tr2</value>
+            <value
+                  target="Date"
+                  type="Simple">4 Nov 2014</value>
+            <value
+                  target="Title"
+                  type="Simple">Rocket Software announces the latest release of iCluster - Rocket iCluster 7.1 TR2</value>
+         </value>
+         <value type="Structure">
+            <value
+                  target="Body"
+                  type="Simple">Rocket Software is pleased to announce the general availability of Rocket Data Virtualization version 2.1, the industry&apos;s only mainframe data virtualization solution for universal access to data, regardless of location, interface or format.</value>
+            <value
+                  target="Link"
+                  type="Simple">http://www.rocketsoftware.com//rocket-data-virtualization-v21-features</value>
+            <value
+                  target="Date"
+                  type="Simple">27 Oct 2014</value>
+            <value
+                  target="Title"
+                  type="Simple">Rocket Data Virtualization v2.1 Now Available</value>
+         </value>
+         <value type="Structure">
+            <value
+                  target="Body"
+                  type="Simple">Rocket Arkivio 7.1 offers more file server support, an updated framework for increased robustness and usability, and new reporting capabilities.</value>
+            <value
+                  target="Link"
+                  type="Simple">https://www.rocketsoftware.com/rocket-arkivio-autostor-71-features</value>
+            <value
+                  target="Date"
+                  type="Simple">14 Oct 2014</value>
+            <value
+                  target="Title"
+                  type="Simple">BI Tools and Data RespArkivio Autostor 7.1 is now available!</value>
+         </value>
+         <value type="Structure">
+            <value
+                  target="Body"
+                  type="Simple"><![CDATA[Rocket Software is committed to the security of our products and to the security of our customers data. On September 25th we learned of the Shellshock bug and took immediate action to review our infrastructure and our product portfolio. We rapidly identified all vulnerabilities by patching to a secure version of Bash, where appropriate, to safeguard critical data. ]]></value>
+            <value
+                  target="Link"
+                  type="Simple">http://www.rocketsoftware.com/news/update-shellshock-vulnerability</value>
+            <value
+                  target="Date"
+                  type="Simple">30 Sep 2014</value>
+            <value
+                  target="Title"
+                  type="Simple">Update on the Shellshock Bug</value>
+         </value>
+         <value type="Structure">
+            <value
+                  target="Body"
+                  type="Simple">Many organizations--even IBM i shops--are adopting agile development methods. While this approach has advantages, it creates friction with the operations folks tasked with getting changes into production. Last month, Rocket Software&apos;s Aldon division started rolling out its new ALM Hub functionality to help the two sides collaborate more effectively while still respecting separation-of-duty requirements.</value>
+            <value
+                  target="Link"
+                  type="Simple">http://www.itjungle.com/fhs/fhs090914-story03.html</value>
+            <value
+                  target="Date"
+                  type="Simple">9 Sep 2014</value>
+            <value
+                  target="Title"
+                  type="Simple">IT Jungle: Rocket Schemes DevOps Serenity with Aldon ALM Hub</value>
+         </value>
+         <value type="Structure">
+            <value
+                  target="Body"
+                  type="Simple">Although well-managed, integrated environments are still important, modern BI tools will need to get data from a variety of sources, not just those sanctioned and blessed by IT.</value>
+            <value
+                  target="Link"
+                  type="Simple">http://tdwi.org/articles/2014/08/26/BI-Tools-and-Data-Responsibility.aspx</value>
+            <value
+                  target="Date"
+                  type="Simple">27 Aug 2014</value>
+            <value
+                  target="Title"
+                  type="Simple">BI Tools and Data Responsibility</value>
+         </value>
+         <value type="Structure">
+            <value
+                  target="Body"
+                  type="Simple">Twenty years ago, IBM introduced OpenEdition MVS, their first foray into &quot;opening&quot; the mainframe to a new community of developers. This release included the Shell and Utilities priced feature. Production cost varied with the size of the mainframe. If you consider that only a handful of people might actually use this code when originally shipped, the &quot;cost per seat&quot; was astronomical compared to what was free or inexpensive on desktop systems. This was corrected when IBM began shipping this feature as part of the base of the new OS/390 operating system. This dramatically reduced the cost and skills needed for new workload development on the mainframe for customers and vendors. But without the revenue associated with the previously priced feature, IBM didn&apos;t keep up with the open source community and quickly, these tools fell behind. This was an unintended consequence....</value>
+            <value
+                  target="Link"
+                  type="Simple">http://jimporell.wordpress.com/2014/08/04/rocket-software-is-making-zos-more-open/</value>
+            <value
+                  target="Date"
+                  type="Simple">19 Aug 2014</value>
+            <value
+                  target="Title"
+                  type="Simple">Rocket Software is Making z/OS More Open</value>
+         </value>
+      </value>
+   </variable>
+   <variable name="ArrayOfSolutions">
+      <type>
+         <array>
+            <type>
+               <structure>
+                  <member name="Image"/>
+                  <member name="Title"/>
+                  <member name="SubTitle"/>
+                  <member name="Description"/>
+                  <member name="Link"/>
+               </structure>
+            </type>
+         </array>
+      </type>
+      <value
+            target="ArrayOfSolutions"
+            type="Array">
+         <value type="Structure">
+            <value
+                  target="Description"
+                  type="Simple">Our Access and Connectivity solutions let companies connect any mobile and web devices to their enterprise applications through a complete line of host access and application modernization products.</value>
+            <value
+                  target="Link"
+                  type="Simple">https://www.youtube.com/watch?v=83tgldTpMtk</value>
+            <value
+                  target="Image"
+                  type="Simple">Resources/Solutions/01_access.png</value>
+            <value
+                  target="SubTitle"
+                  type="Simple">Modernizes enterprise applications for mobile and web connectivity and decreases the cost of traditional terminal emulation methods.</value>
+            <value
+                  target="Title"
+                  type="Simple">Access &amp; Connectivity</value>
+         </value>
+         <value type="Structure">
+            <value
+                  target="Description"
+                  type="Simple">Our ALM solution automates and tracks everything that happens from the time a change request is made until the time the solution is delivered and verified.</value>
+            <value
+                  target="Link"
+                  type="Simple"/>
+            <value
+                  target="Image"
+                  type="Simple">Resources/Solutions/02_alm.png</value>
+            <value
+                  target="SubTitle"
+                  type="Simple">Provides end-to-end application lifecycle management, workflow automation, and reporting for all your software development and deployments.</value>
+            <value
+                  target="Title"
+                  type="Simple">Application Lifecycle Management &amp; DevOps</value>
+         </value>
+         <value type="Structure">
+            <value
+                  target="Description"
+                  type="Simple">Business-critical products and data management solutions for performance optimization, catalog and system management, disaster recovery, hierarchical storage management (HSM), storage management, and security.</value>
+            <value
+                  target="Link"
+                  type="Simple">https://www.youtube.com/watch?v=KVoq_xPZz44</value>
+            <value
+                  target="Image"
+                  type="Simple">Resources/Solutions/03_archive.png</value>
+            <value
+                  target="SubTitle"
+                  type="Simple">Solves big data challenges through intelligent management and protection of data with discovery, reporting, classification, automated actions, and high availability.</value>
+            <value
+                  target="Title"
+                  type="Simple">Archive &amp; Backup Management</value>
+         </value>
+         <value type="Structure">
+            <value
+                  target="Description"
+                  type="Simple">The Intelligent Information Logistics solution provides secure file sharing and process automation with the security, compliance, and administrative control that is critical to the success of today&apos;s enterprises.</value>
+            <value
+                  target="Link"
+                  type="Simple">https://www.youtube.com/watch?v=KPqBwqwM0Bw</value>
+            <value
+                  target="Image"
+                  type="Simple">Resources/Solutions/04_file sharing.png</value>
+            <value
+                  target="SubTitle"
+                  type="Simple">Enables collaboration and file sharing across your enterprise and supplier network with security, compliance, and administrative control.</value>
+            <value
+                  target="Title"
+                  type="Simple">Intelligent Information Logistics</value>
+         </value>
+         <value type="Structure">
+            <value
+                  target="Description"
+                  type="Simple">Business users are empowered through web-based, self-service data visualization. Developers can leverage a data-driven, visual design canvas to enable extensive and intuitive user interaction.</value>
+            <value
+                  target="Link"
+                  type="Simple"/>
+            <value
+                  target="Image"
+                  type="Simple">Resources/Solutions/05_bi.png</value>
+            <value
+                  target="SubTitle"
+                  type="Simple">Supports all BI capabilities from self-service to advanced data visualization, leveraging data from all sources and platforms.</value>
+            <value
+                  target="Title"
+                  type="Simple">BI and Analytics</value>
+         </value>
+         <value type="Structure">
+            <value
+                  target="Description"
+                  type="Simple">Solutions unique to the industry designed to maintain complete data integrity with minimal disruption. Ensure overall data synchronization while protecting all metafile data used for lifecycle management.</value>
+            <value
+                  target="Link"
+                  type="Simple"/>
+            <value
+                  target="Image"
+                  type="Simple">Resources/Solutions/06_data center migration.png</value>
+            <value
+                  target="SubTitle"
+                  type="Simple">Provides tools and services for data center relocation, consolidation, and workload separation to ensure full data integrity and minimal disruption.</value>
+            <value
+                  target="Title"
+                  type="Simple">Data Center Migration</value>
+         </value>
+         <value type="Structure">
+            <value
+                  target="Description"
+                  type="Simple">The industry&apos;s only mainframe-resident data virtualization solution for real-time, universal access to data, regardless of location or format. Eliminates data movement and dramatically reduces mainframe TCO.</value>
+            <value
+                  target="Link"
+                  type="Simple">https://www.youtube.com/watch?v=ztUP8yFlGyg</value>
+            <value
+                  target="Image"
+                  type="Simple">Resources/Solutions/07_dvirtualization.png</value>
+            <value
+                  target="SubTitle"
+                  type="Simple">Provides mainframe-resident data virtualization for real-time, universal access to data, regardless of location or interface, with low mainframe TCO.</value>
+            <value
+                  target="Title"
+                  type="Simple">Data Virtualization</value>
+         </value>
+         <value type="Structure">
+            <value
+                  target="Description"
+                  type="Simple">Rocket DBMS and Application Servers provide proven data management technologies for today&apos;s small to very large enterprise applications, running on desktops, web, mobile, and cloud.</value>
+            <value
+                  target="Link"
+                  type="Simple"/>
+            <value
+                  target="Image"
+                  type="Simple">Resources/Solutions/08_dbcs.png</value>
+            <value
+                  target="SubTitle"
+                  type="Simple">Facilitates rapid application development and provides an environment for embedding customizable solutions.</value>
+            <value
+                  target="Title"
+                  type="Simple">DBMS and Application Servers</value>
+         </value>
+         <value type="Structure">
+            <value
+                  target="Description"
+                  type="Simple">The Enterprise Performance Management solution drives strategy (performance, risk mitigation, and project management) along with budget and resource planning. This solution also supports leading management methodologies through complete workflow automation to realize full strategy execution.</value>
+            <value
+                  target="Link"
+                  type="Simple"/>
+            <value
+                  target="Image"
+                  type="Simple">Resources/Solutions/09_enterprise performance.png</value>
+            <value
+                  target="SubTitle"
+                  type="Simple">Provides a 360-degree, integrated solution that elevates your performance by aligning resources and activities with organizational strategy.</value>
+            <value
+                  target="Title"
+                  type="Simple">Enterprise Performance Management</value>
+         </value>
+         <value type="Structure">
+            <value
+                  target="Description"
+                  type="Simple">Rocket provides an integrated search platform for gathering, indexing, and searching both structured and unstructured data - making the information that you depend on more accessible, useful, and intelligent.</value>
+            <value
+                  target="Link"
+                  type="Simple">https://www.youtube.com/watch?v=HKl9SlR6T74</value>
+            <value
+                  target="Image"
+                  type="Simple">Resources/Solutions/10_enterprise search.png</value>
+            <value
+                  target="SubTitle"
+                  type="Simple">Provides an integrated search platform for gathering, indexing, and searching both structured and unstructured data - from any device, anywhere, anytime.</value>
+            <value
+                  target="Title"
+                  type="Simple">Enterprise Search and Text Analytics</value>
+         </value>
+         <value type="Structure">
+            <value
+                  target="Description"
+                  type="Simple">Harnessing data requires a business approach beyond raw processing power. Derive value from data assets by applying intelligence to corporate data management, backup, and protection.</value>
+            <value
+                  target="Link"
+                  type="Simple"/>
+            <value
+                  target="Image"
+                  type="Simple">Resources/Solutions/11_mainframe.png</value>
+            <value
+                  target="SubTitle"
+                  type="Simple">Ensures effective utilization of IBM System z by maximizing investments through ongoing technology evolution and expertise.</value>
+            <value
+                  target="Title"
+                  type="Simple">Mainframe</value>
+         </value>
+         <value type="Structure">
+            <value
+                  target="Description"
+                  type="Simple">Leverages multilayer autodiscovery and intelligent event filtering and correlation technology to provide end-to-end management of business-critical infrastructure across traditional management boundaries.</value>
+            <value
+                  target="Link"
+                  type="Simple"/>
+            <value
+                  target="Image"
+                  type="Simple">Resources/Solutions/12_network management.png</value>
+            <value
+                  target="SubTitle"
+                  type="Simple">Improves visibility into network infrastructure from layers 2-7. Reduces time to resolve problems in business-critical information systems.</value>
+            <value
+                  target="Title"
+                  type="Simple">Network Management</value>
+         </value>
+      </value>
+   </variable>
+   <variable name="SelectedOffice">
+      <type>
+         <structure>
+            <member name="Name"/>
+            <member name="Lat"/>
+            <member name="Lon"/>
+            <member name="Address1"/>
+            <member name="City"/>
+         </structure>
+      </type>
+   </variable>
+   <variable name="LoadServiceFlag">
+      <value
+            target="LoadServiceFlag"
+            type="Simple">False</value>
+   </variable>
+   <variable
+         persistent="true"
+         name="Username"/>
+   <variable name="LoadCasesFlag">
+      <value
+            target="LoadCasesFlag"
+            type="Simple">False</value>
+   </variable>
+   <variable
+         persistent="true"
+         name="Password"/>
+   <variable name="SelectedCase">
+      <type>
+         <structure>
+            <member name="key"/>
+            <member name="summary"/>
+            <member name="description"/>
+            <member name="statusName"/>
+            <member name="typeName"/>
+            <member name="statusIconUrl"/>
+            <member name="typeIconUrl"/>
+            <member name="priorityName"/>
+            <member name="priorityIconUrl"/>
+         </structure>
+      </type>
+   </variable>
+   <variable name="supportNumbers">
+      <type>
+         <array>
+            <type>
+               <structure>
+                  <member name="tollFreeNumber"/>
+                  <member name="localNumber"/>
+                  <member name="country"/>
+                  <member name="lat"/>
+                  <member name="lon"/>
+               </structure>
+            </type>
+         </array>
+      </type>
+      <value
+            target="supportNumbers"
+            type="Array">
+         <value type="Structure">
+            <value
+                  target="lon"
+                  type="Simple">-71.259279</value>
+            <value
+                  target="localNumber"
+                  type="Simple">+1-781-577-4323</value>
+            <value
+                  target="tollFreeNumber"
+                  type="Simple">1-855-577-4323</value>
+            <value
+                  target="lat"
+                  type="Simple">42.3924161</value>
+            <value
+                  target="country"
+                  type="Simple">United States</value>
+         </value>
+         <value type="Structure">
+            <value
+                  target="lon"
+                  type="Simple">-79.637074</value>
+            <value
+                  target="localNumber"
+                  type="Simple"/>
+            <value
+                  target="tollFreeNumber"
+                  type="Simple">1-855-577-4323</value>
+            <value
+                  target="lat"
+                  type="Simple">43.5963514</value>
+            <value
+                  target="country"
+                  type="Simple">Canada</value>
+         </value>
+         <value type="Structure">
+            <value
+                  target="lon"
+                  type="Simple">-0.436009</value>
+            <value
+                  target="localNumber"
+                  type="Simple"/>
+            <value
+                  target="tollFreeNumber"
+                  type="Simple">0800-520-0439</value>
+            <value
+                  target="lat"
+                  type="Simple">51.509363</value>
+            <value
+                  target="country"
+                  type="Simple">United Kingdom</value>
+         </value>
+         <value type="Structure">
+            <value
+                  target="lon"
+                  type="Simple">2.346373</value>
+            <value
+                  target="localNumber"
+                  type="Simple"/>
+            <value
+                  target="tollFreeNumber"
+                  type="Simple">08-05-08-05-62</value>
+            <value
+                  target="lat"
+                  type="Simple">48.855414</value>
+            <value
+                  target="country"
+                  type="Simple">France</value>
+         </value>
+         <value type="Structure">
+            <value
+                  target="lon"
+                  type="Simple">4.3753899</value>
+            <value
+                  target="localNumber"
+                  type="Simple"/>
+            <value
+                  target="tollFreeNumber"
+                  type="Simple">0800-266-65</value>
+            <value
+                  target="lat"
+                  type="Simple">50.854975</value>
+            <value
+                  target="country"
+                  type="Simple">Belgium</value>
+         </value>
+         <value type="Structure">
+            <value
+                  target="lon"
+                  type="Simple">13.34165</value>
+            <value
+                  target="localNumber"
+                  type="Simple"/>
+            <value
+                  target="tollFreeNumber"
+                  type="Simple">0800-180-0882</value>
+            <value
+                  target="lat"
+                  type="Simple">52.47719</value>
+            <value
+                  target="country"
+                  type="Simple">Germany</value>
+         </value>
+         <value type="Structure">
+            <value
+                  target="lon"
+                  type="Simple">4.6563157</value>
+            <value
+                  target="localNumber"
+                  type="Simple">+31-(0)786-322-800</value>
+            <value
+                  target="tollFreeNumber"
+                  type="Simple">0-800-022-2961</value>
+            <value
+                  target="lat"
+                  type="Simple">51.8094949</value>
+            <value
+                  target="country"
+                  type="Simple">Netherlands</value>
+         </value>
+         <value type="Structure">
+            <value
+                  target="lon"
+                  type="Simple">12.4902716</value>
+            <value
+                  target="localNumber"
+                  type="Simple"/>
+            <value
+                  target="tollFreeNumber"
+                  type="Simple">800-878-295</value>
+            <value
+                  target="lat"
+                  type="Simple">41.8888372</value>
+            <value
+                  target="country"
+                  type="Simple">Italy</value>
+         </value>
+         <value type="Structure">
+            <value
+                  target="lon"
+                  type="Simple">-47.916006</value>
+            <value
+                  target="localNumber"
+                  type="Simple"/>
+            <value
+                  target="tollFreeNumber"
+                  type="Simple">0-800-591-8021</value>
+            <value
+                  target="lat"
+                  type="Simple">-15.7868147</value>
+            <value
+                  target="country"
+                  type="Simple">Brazil</value>
+         </value>
+         <value type="Structure">
+            <value
+                  target="lon"
+                  type="Simple">28.0618284</value>
+            <value
+                  target="localNumber"
+                  type="Simple"/>
+            <value
+                  target="tollFreeNumber"
+                  type="Simple">0-800-980-818</value>
+            <value
+                  target="lat"
+                  type="Simple">-26.16402</value>
+            <value
+                  target="country"
+                  type="Simple">South Africa</value>
+         </value>
+         <value type="Structure">
+            <value
+                  target="lon"
+                  type="Simple">151.2083742</value>
+            <value
+                  target="localNumber"
+                  type="Simple"/>
+            <value
+                  target="tollFreeNumber"
+                  type="Simple">1-800-823-405</value>
+            <value
+                  target="lat"
+                  type="Simple">-33.8401561</value>
+            <value
+                  target="country"
+                  type="Simple">Australia</value>
+         </value>
+         <value type="Structure">
+            <value
+                  target="lon"
+                  type="Simple">174.4657822</value>
+            <value
+                  target="localNumber"
+                  type="Simple"/>
+            <value
+                  target="tollFreeNumber"
+                  type="Simple">0800-003210</value>
+            <value
+                  target="lat"
+                  type="Simple">-41.5490613</value>
+            <value
+                  target="country"
+                  type="Simple">New Zealand</value>
+         </value>
+         <value type="Structure">
+            <value
+                  target="lon"
+                  type="Simple">139.7758437</value>
+            <value
+                  target="localNumber"
+                  type="Simple"/>
+            <value
+                  target="tollFreeNumber"
+                  type="Simple">0800-170-5464</value>
+            <value
+                  target="lat"
+                  type="Simple">35.6703915</value>
+            <value
+                  target="country"
+                  type="Simple">Japan</value>
+         </value>
+         <value type="Structure">
+            <value
+                  target="lon"
+                  type="Simple">116.3384671</value>
+            <value
+                  target="localNumber"
+                  type="Simple"/>
+            <value
+                  target="tollFreeNumber"
+                  type="Simple">800-720-1170</value>
+            <value
+                  target="lat"
+                  type="Simple">39.972236</value>
+            <value
+                  target="country"
+                  type="Simple">China</value>
+         </value>
+      </value>
+   </variable>
+   <variable
+         persistent="true"
+         name="favoriteSupportNumber">
+      <type>
+         <structure>
+            <member name="tollFreeNumber"/>
+            <member name="country"/>
+            <member name="localNumber"/>
+         </structure>
+      </type>
+   </variable>
+   <variable
+         persistent="true"
+         name="selectedSupportLocation"/>
+   <variable name="supportCasesStart">
+      <value
+            target="supportCasesStart"
+            type="Simple">0</value>
+   </variable>
+   <variable name="selectedURL"/>
+   <variable name="officeLocations">
+      <type>
+         <array>
+            <type>
+               <structure>
+                  <member name="Address1"/>
+                  <member name="Address2"/>
+                  <member name="City"/>
+                  <member name="Country"/>
+                  <member name="ID"/>
+                  <member name="Lat"/>
+                  <member name="Lon"/>
+                  <member name="Name"/>
+                  <member name="Notes"/>
+                  <member name="State"/>
+                  <member name="Zip"/>
+                  <member name="display"/>
+               </structure>
+            </type>
+         </array>
+      </type>
+   </variable>
+   <variable name="UseCredentials">
+      <value
+            target="UseCredentials"
+            type="Simple">true</value>
+   </variable>
+   <variable name="AboutWIT">
+      <type>
+         <structure>
+            <member name="Title"/>
+            <member name="Body"/>
+         </structure>
+      </type>
+      <value
+            target="AboutWIT"
+            type="Structure">
+         <value
+               target="Body"
+               type="Simple">WITCC MISSION As a comprehensive community college, our mission is to provide quality education and to economically enhance the communities we serve.</value>
+         <value
+               target="Title"
+               type="Simple">About WITCC</value>
+      </value>
+   </variable>
+</variables>

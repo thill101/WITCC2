@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?VersionInfo exeName="LegaSuite.exe" exeVersion="1.0.0.201411061301" modelVersion="1.0" ?>
+<page>
+   <id>CAMPUSES</id>
+   <title>Offices</title>
+   <backbutton value="true">
+      <id>backbutton1</id>
+      <label/>
+      <handlers>
+         <event
+               desc="backbutton1_OnBack"
+               name="tap">
+            <handler>
+               <action type="BACK"/>
+            </handler>
+         </event>
+         <event
+               desc="backbutton1_OnBack"
+               name="back">
+            <handler>
+               <action type="BACK"/>
+            </handler>
+         </event>
+      </handlers>
+   </backbutton>
+   <actionbutton value="true">
+      <id>actionbutton1</id>
+      <icon>Resources/Rocket-Bug_white_31x42.png</icon>
+      <handlers>
+         <event
+               desc="actionbutton1_OnForward"
+               name="forward">
+            <handler>
+               <action
+                     target="Drawer1"
+                     type="WIDGET_SHOW"/>
+            </handler>
+         </event>
+      </handlers>
+   </actionbutton>
+   <controls>
+      <VerticalComposite>
+         <id>VerticalComposite2</id>
+         <title/>
+         <controls>
+            <Image>
+               <id>Image1</id>
+               <source>Resources/offices_icon.png</source>
+               <title/>
+               <marginCustom value="true">
+                  <marginTop>0</marginTop>
+                  <marginBottom>15</marginBottom>
+               </marginCustom>
+            </Image>
+         </controls>
+         <alignX>Center</alignX>
+      </VerticalComposite>
+      <Label>
+         <id>Message_Label</id>
+         <title/>
+         <value>Please wait...</value>
+      </Label>
+      <List>
+         <id>List1</id>
+         <title/>
+         <listItems>
+            <listItem>
+               <title>${officeLocations.display}</title>
+               <subtitle>${officeLocations.Address1}</subtitle>
+            </listItem>
+         </listItems>
+         <handlers>
+            <event
+                  desc="List1_OnItemSelected"
+                  name="itemSelected">
+               <handler>
+                  <action
+                        target="SelectedOffice"
+                        target-type="Structure"
+                        type="SET_VARIABLE_VALUE">
+                     <actionValue>
+                        <mapping field="Address1">${officeLocations[${List1.selectedIndex}].Address1}</mapping>
+                        <mapping field="City">${officeLocations[${List1.selectedIndex}].City}</mapping>
+                        <mapping field="Lat">${officeLocations[${List1.selectedIndex}].Lat}</mapping>
+                        <mapping field="Lon">${officeLocations[${List1.selectedIndex}].Lon}</mapping>
+                        <mapping field="Name">${officeLocations[${List1.selectedIndex}].Name}</mapping>
+                     </actionValue>
+                  </action>
+                  <action
+                        target="MAP"
+                        type="OPEN_PAGE">
+                     <transition>slide</transition>
+                  </action>
+               </handler>
+            </event>
+         </handlers>
+      </List>
+      <Drawer>
+         <id>Drawer1</id>
+         <title/>
+         <size>60</size>
+         <controls>
+            <Button>
+               <id>Button2</id>
+               <title/>
+               <handlers>
+                  <event
+                        desc="Button1_OnTap"
+                        name="tap">
+                     <handler>
+                        <action
+                              target="MAIN"
+                              type="OPEN_PAGE">
+                           <transition>cube</transition>
+                        </action>
+                     </handler>
+                  </event>
+               </handlers>
+               <icon>Resources/Drawer/drawer_home.png</icon>
+               <label class="rocket-drawer-icon-text">Home</label>
+            </Button>
+            <Button>
+               <id>Button3</id>
+               <title/>
+               <icon>Resources/Drawer/drawer_about_v2.png</icon>
+               <handlers>
+                  <event
+                        desc="Button7_OnTap"
+                        name="tap">
+                     <handler>
+                        <action
+                              target="ROCKET"
+                              type="OPEN_PAGE">
+                           <transition>slide</transition>
+                        </action>
+                     </handler>
+                  </event>
+               </handlers>
+               <label class="rocket-drawer-icon-text">Rocket</label>
+            </Button>
+            <Button>
+               <id>Button4</id>
+               <title/>
+               <icon>Resources/Drawer/drawer_news.png</icon>
+               <handlers>
+                  <event
+                        desc="Button8_OnTap"
+                        name="tap">
+                     <handler>
+                        <action
+                              target="NEWS"
+                              type="OPEN_PAGE">
+                           <transition>slide</transition>
+                        </action>
+                     </handler>
+                  </event>
+               </handlers>
+               <label class="rocket-drawer-icon-text">News</label>
+            </Button>
+            <Button>
+               <id>Button5</id>
+               <title/>
+               <icon>Resources/Drawer/drawer_solutions.png</icon>
+               <handlers>
+                  <event
+                        desc="Button9_OnTap"
+                        name="tap">
+                     <handler>
+                        <action
+                              target="SOLUTIONS"
+                              type="OPEN_PAGE">
+                           <transition>slide</transition>
+                        </action>
+                     </handler>
+                  </event>
+               </handlers>
+               <label class="rocket-drawer-icon-text">Solutions</label>
+            </Button>
+            <Button>
+               <id>Button6</id>
+               <title/>
+               <icon>Resources/Drawer/drawer_support.png</icon>
+               <handlers>
+                  <event
+                        desc="Button10_OnTap"
+                        name="tap">
+                     <handler>
+                        <action
+                              target="SUPPORT"
+                              type="OPEN_PAGE">
+                           <transition>slide</transition>
+                        </action>
+                     </handler>
+                  </event>
+               </handlers>
+               <label class="rocket-drawer-icon-text">Support</label>
+            </Button>
+            <Button>
+               <id>Button7</id>
+               <title/>
+               <icon>Resources/Drawer/drawer_offices.png</icon>
+               <handlers>
+                  <event
+                        desc="Button11_OnTap"
+                        name="tap">
+                     <handler>
+                        <action
+                              target="LOCATIONS"
+                              type="OPEN_PAGE">
+                           <transition>slide</transition>
+                        </action>
+                     </handler>
+                  </event>
+               </handlers>
+               <label class="rocket-drawer-icon-text">Offices</label>
+            </Button>
+            <Button>
+               <id>Button8</id>
+               <title/>
+               <icon>Resources/Drawer/drawer_settings.png</icon>
+               <handlers>
+                  <event
+                        desc="Button12_OnTap"
+                        name="tap">
+                     <handler>
+                        <action
+                              target="SETTINGS"
+                              type="OPEN_PAGE">
+                           <transition>slide</transition>
+                        </action>
+                     </handler>
+                  </event>
+               </handlers>
+               <label class="rocket-drawer-icon-text">Settings</label>
+            </Button>
+         </controls>
+         <orientation>Right</orientation>
+      </Drawer>
+   </controls>
+   <handlers>
+      <event
+            desc="LOCATIONS_OnLoad"
+            name="load">
+         <handler>
+            <condition type="and">
+               <rule operation="eq">
+                  <operand>&quot;${LoadServiceFlag}&quot;</operand>
+                  <operand>&quot;False&quot;</operand>
+               </rule>
+            </condition>
+            <action
+                  target="Scripts/enableGeolocation.js"
+                  type="CUSTOM_SCRIPT"/>
+            <action
+                  target="Message_Label"
+                  type="WIDGET_SHOW"/>
+            <action
+                  target="List1"
+                  type="WIDGET_HIDE"/>
+            <action
+                  target="RocketLocations"
+                  type="SERVICE_CALL"/>
+            <action
+                  target="LoadServiceFlag"
+                  type="SET_VARIABLE_VALUE">
+               <actionValue value="True"/>
+            </action>
+            <action
+                  target="Message_Label"
+                  type="WIDGET_HIDE"/>
+            <action
+                  target="officeLocations"
+                  target-type="Array"
+                  type="SET_VARIABLE_VALUE">
+               <actionValue value="${RocketLocations.response.result_set}"/>
+            </action>
+            <action
+                  target="Scripts/sortLocations.js"
+                  type="CUSTOM_SCRIPT"/>
+            <action
+                  target="List1"
+                  type="WIDGET_SHOW"/>
+         </handler>
+         <handler>
+            <condition type="and">
+               <rule operation="eq">
+                  <operand>&quot;${LoadServiceFlag}&quot;</operand>
+                  <operand>&quot;True&quot;</operand>
+               </rule>
+            </condition>
+            <action
+                  target="Message_Label"
+                  type="WIDGET_HIDE"/>
+         </handler>
+      </event>
+   </handlers>
+</page>
